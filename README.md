@@ -3,4 +3,4 @@ Etch A Sketch drawing space, like the classic game. Draw, change colour, mess ar
 
 This was my first project, from The Odin Project. My first attempt at using Html/CSS/Javascript.
 
-Check out the working version: 
+Check out the working version: https://github.com/Samparkyn/Sketch.git
