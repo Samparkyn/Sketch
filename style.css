@@ -1,59 +1,80 @@
-
-div {
-    display: block;
+body {
+    background-image: url('../images/dark.jpg');
 }
 
-.square {
+
+
+h1 {
+    font-size: 40px;
+    color: black;
+    text-shadow: 1px 1px 5px blue;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+p {
+    color: blueviolet;
+    font-size: 20px;
+    position: relative;
+    margin-left: 30px;
+}
+
+
+button {
+  font-family: Arial, Tahoma, sans-serif;
+  font-size: 1.0em;
+  font-weight: bold;
+  color: #FFF;
+    font-size: 1em;
+    height: 30px;
+    width: 150px;
+  background: #3b88d8;
+  -webkit-background-clip: padding-box;
+  background: -moz-linear-gradient(0% 100% 90deg, #377ad0, #52a8e8);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#52a8e8), to(#377ad0));
+  margin-top: 10px;
+}
+
+button:hover{
+     background: blueviolet;
+ 
+}
+
+.navbar {
+    margin-left: 140px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.container {
+    margin-left: 30%;
+    margin-top: 30px;
+    display: block;    
+    width: 900px;
+    height: 700px;
+    font-size: 0px;
+    position: absolute;
+    }
+
+    .square {
     width: 50px;
     height: 50px;
     outline: royalblue solid;
     background-color: darkgrey;
     border-style: solid;
-    display: inline-block;
-
-    
+    display: inline-block; 
 }
 
-header {
-    text-align: center;
-    font-size: 40px;
-    color: darkblue;
-    position: center;
-}
-
-p {
-    text-align: center;
-    color: blueviolet;
-    font-size: 20px;
-    position: center;
+.content {
+    float: left;
+    border: solid 5px whitesmoke;
+    background-color: lightgrey;
+    margin-left: 20px;
+    margin-top: 100px;
 }
 
 
-button {
-    min-width: 80px;
-    min-height: 25px;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: skyblue;
-    color: black;
-    position: relative;
-}
 
-.navbar {
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-align: center;
-    display: block;
-    position: center;
-}
-
-.container {
-    
-    margin: 0px auto;
-    display: block;    
-    width: 900px;
-    height: 900px;
-    font-size: 0px;
-    }
 
