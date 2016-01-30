@@ -1,32 +1,55 @@
 <DOCTYPE <!DOCTYPE html>
+
 <html>
 <head>
 
-	<link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<header>Sam's Etch-A-Sketch</header>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-                <title>Sam's Etch-A-Sketch </title>
-            
-            <p>You know how the game works.. Have a play, draw something, change colours..Have fun!</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <title>Sam's Sketch </title>
+
+<body>
+
+    <div class="content">
+        <h1>Sam's Etch-A-Sketch</h1>
+	
+        <p>You know how the game works.<br>Have a play, draw something, change colours..Have fun!</p>
+
             <div class="navbar">
+
                 <button class="normal">Default</button>
+                <br>
                 <button class="random">Random Color</button>
+                <br>
                 <button class="trail">Trail</button>
+                <br>
                 <button class="clear">Clear-it-all</button>
+                
+                <p>Color Picker</p>
+                <input class="jscolor" id="colorBox" value="FFFFFF">
+                          
                 </div>
 
-                <div class="container">
+                <br>
+                <br>
+  </div>
+          
+
+                <div class="container"></div>
 
 
-       <script type="text/javascript" src="sketch.js"></script>
+       <script type="text/javascript" src="js/sketch.js"></script>
+       <script src="js/jscolor.js"></script>
+
+       <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jscolor/jscolor.js"></script>
+
             
-            <footer>
-            
-            </footer>
           
         </body>
 
 </html>
+
 
 
