@@ -1,6 +1,7 @@
 $(document).ready(function() {
     
     createGrid(16);
+
     
 }); 
 
@@ -27,17 +28,7 @@ function createGrid(x) {
         
     }
 
-function getGridSize() {
-    
-    do {
-        
-    var size = prompt("Please enter an integer between 1 and 128:");
-    
-    } while (size < 1 || size > 128);
-    
-    return size;
-    
-}
+
     
 function resetSquares() {
     
@@ -50,7 +41,7 @@ function sketch() {     // default sketch animation
 
     $(".square").mouseenter(function() {
 
-        $(this).css("background-color", "blue");
+        $(this).css("background-color", "black");
 
     });
 
@@ -103,6 +94,17 @@ function trails() {     // draw trails using fade animations
     
 }
 
+function colorOption() {
+    var newColor = "#" + $('#colorBox').val();
+    console.log(newColor);
+
+    $('.square').mouseover(function() {
+        $(this).css("background-color", newColor);
+    });
+}
+
+
+
 var borders = $("input[type=checkbox]");
 
 borders.click (function() {     // toggle borders
@@ -125,6 +127,8 @@ $("navbar").click(function() {      // reset event handlers for the animations w
     $(".square").unbind();
     
 });
+
+
 
 $(".default").click (function() {
         
@@ -150,6 +154,13 @@ $(".trail").click(function() {
         
     });
 
+$("#colorBox").change(function() {
+        colorOption();
+
+    });
+
+
+
 $("#newGrid").click(function() {
         
         createGrid(getGridSize());
@@ -163,3 +174,8 @@ $(".clear").click(function() {       // clears the canvas and reverts back to th
         sketch();
     
     });
+
+$(".normal").click(function(){
+    
+    sketch();
+})
